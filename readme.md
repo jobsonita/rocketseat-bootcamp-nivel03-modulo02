@@ -23,6 +23,7 @@ Este projeto deve ser utilizado em conjunto com o back-end desenvolvido ao longo
 - react
 - typescript
 - eslint + prettier (padronização de código)
+- styled-components (estilização de componentes)
 - [VS Code](https://code.visualstudio.com) (editor de código preferido)
 
 ## Instalação e execução
@@ -88,4 +89,11 @@ yarn add -D eslint-config-standard eslint-config-standard-react @typescript-esli
 yarn add eslint-import-resolver-typescript -D
 
 yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
+```
+
+#### Aula 02
+
+```
+yarn add styled-components
+yarn add @types/styled-components -D
 ```
