@@ -6,6 +6,8 @@
 
 Baseado nas aulas do curso [GoStack](https://rocketseat.com.br/gostack) (turma 11) da Rocketseat.
 
+<p align="center"><img alt="Demonstração do web site" title="Página de Login" src=".github/demo.png" width="600px" /></p>
+
 ## Sobre este projeto
 
 Este projeto é um front-end em ReactJS usando as bibliotecas react, typescript e styled-components.
@@ -96,4 +98,11 @@ yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
 ```
 yarn add styled-components
 yarn add @types/styled-components -D
+```
+
+#### Aula 03
+
+```
+yarn add react-icons
+yarn add polished
 ```
