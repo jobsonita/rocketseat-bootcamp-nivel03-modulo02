@@ -27,6 +27,7 @@ Este projeto deve ser utilizado em conjunto com o back-end desenvolvido ao longo
 - eslint + prettier (padronização de código)
 - styled-components (estilização de componentes)
 - unform (controle otimizado de forms)
+- yup (validação de dados)
 - [VS Code](https://code.visualstudio.com) (editor de código preferido)
 
 ## Instalação e execução
@@ -112,4 +113,11 @@ yarn add polished
 
 ```
 yarn add @unform/core @unform/web
+```
+
+#### Aula 08
+
+```
+yarn add yup
+yarn add @types/yup -D
 ```
