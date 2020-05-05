@@ -26,6 +26,7 @@ Este projeto deve ser utilizado em conjunto com o back-end desenvolvido ao longo
 - typescript
 - eslint + prettier (padronização de código)
 - styled-components (estilização de componentes)
+- unform (controle otimizado de forms)
 - [VS Code](https://code.visualstudio.com) (editor de código preferido)
 
 ## Instalação e execução
@@ -105,4 +106,10 @@ yarn add @types/styled-components -D
 ```
 yarn add react-icons
 yarn add polished
+```
+
+#### Aula 06
+
+```
+yarn add @unform/core @unform/web
 ```
