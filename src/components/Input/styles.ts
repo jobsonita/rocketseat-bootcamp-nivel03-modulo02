@@ -45,13 +45,10 @@ export const Container = styled.div<ContainerProps>`
     }
 
     @keyframes autofill {
-      to {
-        color: #ffc000;
+      from {
+        color: #f4ede8;
         background: transparent;
       }
-    }
-
-    @-webkit-keyframes autofill {
       to {
         color: #ffc000;
         background: transparent;
@@ -60,11 +57,10 @@ export const Container = styled.div<ContainerProps>`
 
     &:-webkit-autofill,
     &:-webkit-autofill:hover,
-    &:-webkit-autofill:focus {
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
       animation-name: autofill;
       animation-fill-mode: both;
-      -webkit-animation-name: autofill;
-      -webkit-animation-fill-mode: both;
     }
   }
 
