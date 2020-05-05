@@ -38,6 +38,7 @@
         "allowExpressions": true
       }
     ],
+    "@typescript-eslint/no-unused-expressions": "error",
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -46,6 +47,7 @@
         "tsx": "never"
       }
     ],
+    "no-unused-expressions": "off",
     "prettier/prettier": [
       "error",
       {
