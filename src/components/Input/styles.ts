@@ -43,6 +43,29 @@ export const Container = styled.div<ContainerProps>`
     &::placeholder {
       color: #666360;
     }
+
+    @keyframes autofill {
+      to {
+        color: #ffc000;
+        background: transparent;
+      }
+    }
+
+    @-webkit-keyframes autofill {
+      to {
+        color: #ffc000;
+        background: transparent;
+      }
+    }
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus {
+      animation-name: autofill;
+      animation-fill-mode: both;
+      -webkit-animation-name: autofill;
+      -webkit-animation-fill-mode: both;
+    }
   }
 
   svg {
