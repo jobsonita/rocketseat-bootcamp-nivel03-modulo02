@@ -127,3 +127,9 @@ yarn add @types/yup -D
 #### Aula 01
 
 [Alterações no back-end](https://github.com/jobsonita/rocketseat-bootcamp-nivel02-modulo02/commit/6b994a49122b925c841dd50652682d9926a71ec5)
+
+#### Aula 03
+
+```
+yarn add axios
+```
