@@ -8,7 +8,8 @@ import * as Yup from 'yup'
 
 import logoImg from '../../assets/logo.svg'
 
-import { useAuth } from '../../context/AuthContext'
+import { useAuth } from '../../context/auth'
+import { useToast } from '../../context/toast'
 
 import Button from '../../components/Button'
 import Input from '../../components/Input'
@@ -38,6 +39,8 @@ const SignIn: React.FC = () => {
 
   const { signIn } = useAuth()
 
+  const { addToast } = useToast()
+
   const handleSubmit = useCallback(
     async ({ email, password }: SignInFormData): Promise<void> => {
       formRef.current?.setErrors({})
@@ -46,6 +49,7 @@ const SignIn: React.FC = () => {
         await schema.validate({ email, password }, { abortEarly: false })
       } catch (error) {
         formRef.current?.setErrors(getValidationErrors(error))
+        addToast()
         return
       }
 
@@ -54,13 +58,15 @@ const SignIn: React.FC = () => {
       } catch (error) {
         if (error.message === 'Network Error') {
           console.error('Falha na requisição')
+          addToast()
         } else {
           const { response } = error as AxiosError<SignInError>
           console.error(response?.status, response?.data)
+          addToast()
         }
       }
     },
-    [signIn]
+    [addToast, signIn]
   )
 
   return (
