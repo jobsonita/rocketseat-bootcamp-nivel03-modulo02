@@ -1,4 +1,4 @@
-import React, { useCallback, useRef } from 'react'
+import React, { useCallback, useContext, useRef } from 'react'
 
 import { FormHandles } from '@unform/core'
 import { Form } from '@unform/web'
@@ -6,6 +6,8 @@ import { FiLock, FiLogIn, FiMail } from 'react-icons/fi'
 import * as Yup from 'yup'
 
 import logoImg from '../../assets/logo.svg'
+
+import AuthContext from '../../context/AuthContext'
 
 import Button from '../../components/Button'
 import Input from '../../components/Input'
@@ -23,6 +25,10 @@ const schema = Yup.object().shape({
 
 const SignIn: React.FC = () => {
   const formRef = useRef<FormHandles>(null)
+
+  const { name } = useContext(AuthContext)
+
+  console.log(name)
 
   const handleSubmit = useCallback(async (data: object): Promise<void> => {
     formRef.current?.setErrors({})
