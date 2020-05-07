@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled, { css, keyframes } from 'styled-components'
 
 import Tooltip from '../Tooltip'
 
@@ -7,6 +7,17 @@ interface ContainerProps {
   isFilled: boolean
   isFocused: boolean
 }
+
+const autofillAnimation = keyframes`
+  from {
+    color: #f4ede8;
+    background: transparent;
+  }
+  to {
+    color: #ffc000;
+    background: transparent;
+  }
+`
 
 export const Container = styled.div<ContainerProps>`
   background: #232129;
@@ -53,22 +64,11 @@ export const Container = styled.div<ContainerProps>`
       color: #666360;
     }
 
-    @keyframes autofill {
-      from {
-        color: #f4ede8;
-        background: transparent;
-      }
-      to {
-        color: #ffc000;
-        background: transparent;
-      }
-    }
-
     &:-webkit-autofill,
     &:-webkit-autofill:hover,
     &:-webkit-autofill:focus,
     &:-webkit-autofill:active {
-      animation-name: autofill;
+      animation-name: ${autofillAnimation};
       animation-fill-mode: both;
     }
   }

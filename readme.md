@@ -26,8 +26,11 @@ Este projeto deve ser utilizado em conjunto com o back-end desenvolvido ao longo
 - typescript
 - eslint + prettier (padronização de código)
 - styled-components (estilização de componentes)
+- polished, react-spring, react-icons (estilizações adicionais)
 - unform (controle otimizado de forms)
 - yup (validação de dados)
+- axios (requisições HTTP REST)
+- react-router-dom (roteamento de páginas)
 - [VS Code](https://code.visualstudio.com) (editor de código preferido)
 
 ## Instalação e execução
@@ -146,4 +149,13 @@ yarn add uuidv4
 
 ```
 yarn add react-spring
+```
+
+### Sessão 04
+
+#### Aula 01
+
+```
+yarn add react-router-dom
+yarn add @types/react-router-dom -D
 ```
