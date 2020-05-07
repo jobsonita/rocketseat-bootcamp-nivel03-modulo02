@@ -49,7 +49,11 @@ const SignIn: React.FC = () => {
         await schema.validate({ email, password }, { abortEarly: false })
       } catch (error) {
         formRef.current?.setErrors(getValidationErrors(error))
-        addToast()
+        addToast({
+          type: 'error',
+          title: 'Falha na validação',
+          description: 'Verifique os dados do formulário',
+        })
         return
       }
 
@@ -57,12 +61,18 @@ const SignIn: React.FC = () => {
         await signIn({ email, password })
       } catch (error) {
         if (error.message === 'Network Error') {
-          console.error('Falha na requisição')
-          addToast()
+          addToast({
+            type: 'error',
+            title: 'Falha na requisição',
+            description: 'Verifique sua conexão com a internet',
+          })
         } else {
           const { response } = error as AxiosError<SignInError>
-          console.error(response?.status, response?.data)
-          addToast()
+          addToast({
+            type: 'error',
+            title: 'Falha na autenticação',
+            description: response?.data.message,
+          })
         }
       }
     },

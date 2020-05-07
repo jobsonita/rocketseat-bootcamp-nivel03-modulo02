@@ -133,3 +133,11 @@ yarn add @types/yup -D
 ```
 yarn add axios
 ```
+
+### Sessão 03
+
+#### Aula 03
+
+```
+yarn add uuidv4
+```
