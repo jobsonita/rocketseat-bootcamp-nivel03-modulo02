@@ -169,3 +169,7 @@ yarn add @types/react-router-dom -D
 Desde a sessão02-aula04, era necessário que o back-end retornasse também os dados do usuário.
 Essa alteração está disponível em:
 https://github.com/jobsonita/rocketseat-bootcamp-nivel02-modulo02/commit/214ff4ceeb12ec1c5b9c7fd76eb85bf706724a4f
+
+#### Aula 03
+
+Nesta aula foi feita uma correção na funcionalidade de logout do contexto de autenticação.
