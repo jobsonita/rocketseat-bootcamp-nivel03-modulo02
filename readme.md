@@ -141,3 +141,9 @@ yarn add axios
 ```
 yarn add uuidv4
 ```
+
+#### Aula 04
+
+```
+yarn add react-spring
+```
