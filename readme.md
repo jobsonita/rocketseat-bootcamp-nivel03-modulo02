@@ -6,7 +6,7 @@
 
 Baseado nas aulas do curso [GoStack](https://rocketseat.com.br/gostack) (turma 11) da Rocketseat.
 
-<p align="center"><img alt="Demonstração do web site" title="Página de Login" src=".github/demo.png" width="600px" /></p>
+<p align="center"><img alt="Demonstração do web site" title="Página de Login" src=".github/demo.gif" width="600px" /></p>
 
 ## Sobre este projeto
 
